@@ -2,12 +2,12 @@
 {
     public class Statistics
     {
-        public float Min { get; set; }
+        public float Min { get; private set; }
 
-        public float Max { get; set; }
+        public float Max { get; private set; }
 
-        public float Sum { get; set; }
-        public int Count { get; set; }
+        public float Sum { get; private set; }
+        public int Count { get; private set; }
 
         public float Average
         {
