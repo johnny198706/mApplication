@@ -12,12 +12,11 @@
 
         public override void AddMeasurement(float measurement)
         {
-            if (measurement >= 0 && measurement <= 10000)
+            if (measurement >= 0 && measurement <= 1100)
             {
                 using (var writer = File.AppendText(fileName))
                 {
                     writer.WriteLine(measurement);
-                    writer.Close();
                 }
                 if (MeasurementAdded != null)
                 {
@@ -25,7 +24,7 @@
                 }
                 else
                 {
-                    Console.WriteLine("Incorrect measurement value");
+                    Console.WriteLine(" Incorrect measurement value");
                 }
             }
         }
@@ -81,12 +80,12 @@
                         AddMeasurement(1000);
                         break;
                     default:
-                        throw new Exception("Wrong Letter");
+                        throw new Exception(" Wrong Letter");
                 }
             }
             else
             {
-                throw new Exception("string is not float");
+                throw new Exception(" string is not float");
             }
         }
 
