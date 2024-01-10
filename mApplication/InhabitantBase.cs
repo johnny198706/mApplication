@@ -79,13 +79,25 @@
         }
 
 
-        public abstract void AddMeasurement(double measurement);
+        public void AddMeasurement(double measurement)
+        {
+            float measurementAsFloat = (float)measurement;
+            this.AddMeasurement(measurementAsFloat);
+        }
 
 
-        public abstract void AddMeasurement(int measurement);
+        public void AddMeasurement(int measurement)
+        {
+            float measurementAsFloat = (float)measurement;
+            this.AddMeasurement(measurementAsFloat);
+        }
 
 
-        public abstract void AddMeasurement(long measurement);
+        public void AddMeasurement(long measurement)
+        {
+            float measurementAsFloat = (float)measurement;
+            this.AddMeasurement(measurementAsFloat);
+        }
 
         public abstract Statistics GetStatistics();
 

@@ -24,32 +24,9 @@
                 }
                 else
                 {
-                    Console.WriteLine(" Incorrect measurement value");
+                    Console.WriteLine(" The given value is outside the range from 0 to 1100");
                 }
             }
-        }
-
-        public new void AddMeasurement(string measurement)
-        {
-            base.AddMeasurement(measurement);
-        }
-
-        public override void AddMeasurement(double measurement)
-        {
-            float measurementAsFloat = (float)measurement;
-            this.AddMeasurement(measurementAsFloat);
-        }
-
-        public override void AddMeasurement(int measurement)
-        {
-            float measurementAsFloat = (float)measurement;
-            this.AddMeasurement(measurementAsFloat);
-        }
-
-        public override void AddMeasurement(long measurement)
-        {
-            float measurementAsFloat = (float)measurement;
-            this.AddMeasurement(measurementAsFloat);
         }
 
         public override Statistics GetStatistics()
