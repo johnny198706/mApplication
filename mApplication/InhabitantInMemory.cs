@@ -23,7 +23,7 @@
             }
             else
             {
-                Console.WriteLine(" The given value is outside the range from 0 to 1100");
+                throw new Exception(" The given value is outside the range from 0 to 1100");
             }
         }
 

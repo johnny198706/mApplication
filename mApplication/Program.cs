@@ -8,7 +8,7 @@ Console.WriteLine(" In the application use shortened measurement values : A or a
 Console.WriteLine(" When you want to finish,press X or x");
 Console.WriteLine(" If the value we enter in the console is less that 0 or higher that 1100, the message will appear (The given value is outside the range from 0 to 1100)");
 Console.WriteLine(" If you enter a letter other that A-J and X, an error will be throw (Wrong Letter)");
-var inhabitant = new InhabitantInMemory("Marcin", "Stefański", "Słupsk,ul.Oliwna 2");
+var inhabitant = new InhabitantInFile("Marcin", "Stefański", "Słupsk,ul.Oliwna 2");
 
 while (true)
 {

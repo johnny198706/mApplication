@@ -22,10 +22,11 @@
                 {
                     MeasurementAdded(this, new EventArgs());
                 }
-                else
-                {
-                    Console.WriteLine(" The given value is outside the range from 0 to 1100");
-                }
+
+            }
+            else
+            {
+                throw new Exception(" The given value is outside the range from 0 to 1100");
             }
         }
 
